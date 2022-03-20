@@ -49,6 +49,10 @@
 			directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
 			directionalLight.position.set(10,0,25);
 			scene.add( directionalLight );
+			const gridHelper = new THREE.GridHelper(200,50);
+
+			scene.add(gridHelper);
+
 
 			// ----- RAYCASTING
 			const raycaster = new THREE.Raycaster();
