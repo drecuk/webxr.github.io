@@ -35,18 +35,15 @@
 				camera.updateProjectionMatrix();
 			});
 
-			function initScene () {
-				this.radius = 0.08;
 
+				this.radius = 0.08;
 
 				// add some geometry
 				const geometry = new THREE.BoxGeometry();
 				const material = new THREE.MeshLambertMaterial( { color: 0xffcc00 } );
 				const cube = new THREE.Mesh( geometry, material );
 				scene.add( cube );
-			}
 
-			initScene();
 
 
 			// add light
